@@ -16,6 +16,54 @@
 		7732CC06182016BD008569C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7732CC05182016BD008569C9 /* Images.xcassets */; };
 		7732CC0D182016BD008569C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7732CC0C182016BD008569C9 /* XCTest.framework */; };
 		7732CC0E182016BD008569C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7732CBED182016BD008569C9 /* Cocoa.framework */; };
+		7732CC2518201826008569C9 /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC2218201826008569C9 /* MainWindow.m */; };
+		7732CC2618201826008569C9 /* XibInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC2418201826008569C9 /* XibInputView.m */; };
+		7732CC8618201847008569C9 /* NSDictionary+Nib2ObjcExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC2A18201847008569C9 /* NSDictionary+Nib2ObjcExtensions.m */; };
+		7732CC8718201847008569C9 /* NSNumber+Nib2ObjcExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC2C18201847008569C9 /* NSNumber+Nib2ObjcExtensions.m */; };
+		7732CC8818201847008569C9 /* NSString+Nib2ObjcExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC2E18201847008569C9 /* NSString+Nib2ObjcExtensions.m */; };
+		7732CC8918201847008569C9 /* NibProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3018201847008569C9 /* NibProcessor.m */; };
+		7732CC8A18201847008569C9 /* GLKViewControllerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3318201847008569C9 /* GLKViewControllerProcessor.m */; };
+		7732CC8B18201847008569C9 /* GLKViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3518201847008569C9 /* GLKViewProcessor.m */; };
+		7732CC8C18201847008569C9 /* MKMapViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3718201847008569C9 /* MKMapViewProcessor.m */; };
+		7732CC8D18201847008569C9 /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3918201847008569C9 /* Processor.m */; };
+		7732CC8E18201847008569C9 /* ProxyObjectProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3B18201847008569C9 /* ProxyObjectProcessor.m */; };
+		7732CC8F18201847008569C9 /* UIActivityIndicatorViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3D18201847008569C9 /* UIActivityIndicatorViewProcessor.m */; };
+		7732CC9018201847008569C9 /* UIBarButtonItemProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC3F18201847008569C9 /* UIBarButtonItemProcessor.m */; };
+		7732CC9118201847008569C9 /* UIBarItemProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4118201847008569C9 /* UIBarItemProcessor.m */; };
+		7732CC9218201847008569C9 /* UIButtonProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4318201847008569C9 /* UIButtonProcessor.m */; };
+		7732CC9318201847008569C9 /* UIControlProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4518201847008569C9 /* UIControlProcessor.m */; };
+		7732CC9418201847008569C9 /* UIDatePickerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4718201847008569C9 /* UIDatePickerProcessor.m */; };
+		7732CC9518201847008569C9 /* UIGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4918201847008569C9 /* UIGestureRecognizerProcessor.m */; };
+		7732CC9618201847008569C9 /* UIImageViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4B18201847008569C9 /* UIImageViewProcessor.m */; };
+		7732CC9718201847008569C9 /* UILabelProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4D18201847008569C9 /* UILabelProcessor.m */; };
+		7732CC9818201847008569C9 /* UILongPressGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC4F18201847008569C9 /* UILongPressGestureRecognizerProcessor.m */; };
+		7732CC9918201847008569C9 /* UINavigationBarProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5118201847008569C9 /* UINavigationBarProcessor.m */; };
+		7732CC9A18201847008569C9 /* UINavigationItemProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5318201847008569C9 /* UINavigationItemProcessor.m */; };
+		7732CC9B18201847008569C9 /* UIPageControlProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5518201847008569C9 /* UIPageControlProcessor.m */; };
+		7732CC9C18201847008569C9 /* UIPanGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5718201847008569C9 /* UIPanGestureRecognizerProcessor.m */; };
+		7732CC9D18201847008569C9 /* UIPickerViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5918201847008569C9 /* UIPickerViewProcessor.m */; };
+		7732CC9E18201847008569C9 /* UIPinchGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5B18201847008569C9 /* UIPinchGestureRecognizerProcessor.m */; };
+		7732CC9F18201847008569C9 /* UIProgressViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5D18201847008569C9 /* UIProgressViewProcessor.m */; };
+		7732CCA018201847008569C9 /* UIRotationGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC5F18201847008569C9 /* UIRotationGestureRecognizerProcessor.m */; };
+		7732CCA118201847008569C9 /* UIScrollViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6118201847008569C9 /* UIScrollViewProcessor.m */; };
+		7732CCA218201847008569C9 /* UISearchBarProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6318201847008569C9 /* UISearchBarProcessor.m */; };
+		7732CCA318201847008569C9 /* UISegmentedControlProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6518201847008569C9 /* UISegmentedControlProcessor.m */; };
+		7732CCA418201847008569C9 /* UISliderProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6718201847008569C9 /* UISliderProcessor.m */; };
+		7732CCA518201847008569C9 /* UIStepperProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6918201847008569C9 /* UIStepperProcessor.m */; };
+		7732CCA618201847008569C9 /* UISwipeGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6B18201847008569C9 /* UISwipeGestureRecognizerProcessor.m */; };
+		7732CCA718201847008569C9 /* UISwitchProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6D18201847008569C9 /* UISwitchProcessor.m */; };
+		7732CCA818201847008569C9 /* UITabBarItemProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC6F18201847008569C9 /* UITabBarItemProcessor.m */; };
+		7732CCA918201847008569C9 /* UITabBarProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7118201847008569C9 /* UITabBarProcessor.m */; };
+		7732CCAA18201847008569C9 /* UITableViewCellProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7318201847008569C9 /* UITableViewCellProcessor.m */; };
+		7732CCAB18201847008569C9 /* UITableViewControllerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7518201847008569C9 /* UITableViewControllerProcessor.m */; };
+		7732CCAC18201847008569C9 /* UITableViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7718201847008569C9 /* UITableViewProcessor.m */; };
+		7732CCAD18201847008569C9 /* UITapGestureRecognizerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7918201847008569C9 /* UITapGestureRecognizerProcessor.m */; };
+		7732CCAE18201847008569C9 /* UITextFieldProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7B18201847008569C9 /* UITextFieldProcessor.m */; };
+		7732CCAF18201847008569C9 /* UITextViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7D18201847008569C9 /* UITextViewProcessor.m */; };
+		7732CCB018201847008569C9 /* UIToolbarProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC7F18201847008569C9 /* UIToolbarProcessor.m */; };
+		7732CCB118201847008569C9 /* UIViewControllerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC8118201847008569C9 /* UIViewControllerProcessor.m */; };
+		7732CCB218201847008569C9 /* UIViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC8318201847008569C9 /* UIViewProcessor.m */; };
+		7732CCB318201847008569C9 /* UIWebViewProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7732CC8518201847008569C9 /* UIWebViewProcessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +93,102 @@
 		7732CC05182016BD008569C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7732CC0B182016BD008569C9 /* Xib2objcAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xib2objcAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7732CC0C182016BD008569C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7732CC2118201826008569C9 /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
+		7732CC2218201826008569C9 /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
+		7732CC2318201826008569C9 /* XibInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibInputView.h; sourceTree = "<group>"; };
+		7732CC2418201826008569C9 /* XibInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibInputView.m; sourceTree = "<group>"; };
+		7732CC2918201847008569C9 /* NSDictionary+Nib2ObjcExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Nib2ObjcExtensions.h"; sourceTree = "<group>"; };
+		7732CC2A18201847008569C9 /* NSDictionary+Nib2ObjcExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Nib2ObjcExtensions.m"; sourceTree = "<group>"; };
+		7732CC2B18201847008569C9 /* NSNumber+Nib2ObjcExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Nib2ObjcExtensions.h"; sourceTree = "<group>"; };
+		7732CC2C18201847008569C9 /* NSNumber+Nib2ObjcExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Nib2ObjcExtensions.m"; sourceTree = "<group>"; };
+		7732CC2D18201847008569C9 /* NSString+Nib2ObjcExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Nib2ObjcExtensions.h"; sourceTree = "<group>"; };
+		7732CC2E18201847008569C9 /* NSString+Nib2ObjcExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Nib2ObjcExtensions.m"; sourceTree = "<group>"; };
+		7732CC2F18201847008569C9 /* NibProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibProcessor.h; sourceTree = "<group>"; };
+		7732CC3018201847008569C9 /* NibProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibProcessor.m; sourceTree = "<group>"; };
+		7732CC3218201847008569C9 /* GLKViewControllerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKViewControllerProcessor.h; sourceTree = "<group>"; };
+		7732CC3318201847008569C9 /* GLKViewControllerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKViewControllerProcessor.m; sourceTree = "<group>"; };
+		7732CC3418201847008569C9 /* GLKViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKViewProcessor.h; sourceTree = "<group>"; };
+		7732CC3518201847008569C9 /* GLKViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKViewProcessor.m; sourceTree = "<group>"; };
+		7732CC3618201847008569C9 /* MKMapViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewProcessor.h; sourceTree = "<group>"; };
+		7732CC3718201847008569C9 /* MKMapViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewProcessor.m; sourceTree = "<group>"; };
+		7732CC3818201847008569C9 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		7732CC3918201847008569C9 /* Processor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Processor.m; sourceTree = "<group>"; };
+		7732CC3A18201847008569C9 /* ProxyObjectProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyObjectProcessor.h; sourceTree = "<group>"; };
+		7732CC3B18201847008569C9 /* ProxyObjectProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyObjectProcessor.m; sourceTree = "<group>"; };
+		7732CC3C18201847008569C9 /* UIActivityIndicatorViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIActivityIndicatorViewProcessor.h; sourceTree = "<group>"; };
+		7732CC3D18201847008569C9 /* UIActivityIndicatorViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIActivityIndicatorViewProcessor.m; sourceTree = "<group>"; };
+		7732CC3E18201847008569C9 /* UIBarButtonItemProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonItemProcessor.h; sourceTree = "<group>"; };
+		7732CC3F18201847008569C9 /* UIBarButtonItemProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonItemProcessor.m; sourceTree = "<group>"; };
+		7732CC4018201847008569C9 /* UIBarItemProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarItemProcessor.h; sourceTree = "<group>"; };
+		7732CC4118201847008569C9 /* UIBarItemProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarItemProcessor.m; sourceTree = "<group>"; };
+		7732CC4218201847008569C9 /* UIButtonProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonProcessor.h; sourceTree = "<group>"; };
+		7732CC4318201847008569C9 /* UIButtonProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonProcessor.m; sourceTree = "<group>"; };
+		7732CC4418201847008569C9 /* UIControlProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlProcessor.h; sourceTree = "<group>"; };
+		7732CC4518201847008569C9 /* UIControlProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlProcessor.m; sourceTree = "<group>"; };
+		7732CC4618201847008569C9 /* UIDatePickerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerProcessor.h; sourceTree = "<group>"; };
+		7732CC4718201847008569C9 /* UIDatePickerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerProcessor.m; sourceTree = "<group>"; };
+		7732CC4818201847008569C9 /* UIGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC4918201847008569C9 /* UIGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC4A18201847008569C9 /* UIImageViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewProcessor.h; sourceTree = "<group>"; };
+		7732CC4B18201847008569C9 /* UIImageViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewProcessor.m; sourceTree = "<group>"; };
+		7732CC4C18201847008569C9 /* UILabelProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelProcessor.h; sourceTree = "<group>"; };
+		7732CC4D18201847008569C9 /* UILabelProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelProcessor.m; sourceTree = "<group>"; };
+		7732CC4E18201847008569C9 /* UILongPressGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILongPressGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC4F18201847008569C9 /* UILongPressGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILongPressGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC5018201847008569C9 /* UINavigationBarProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationBarProcessor.h; sourceTree = "<group>"; };
+		7732CC5118201847008569C9 /* UINavigationBarProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationBarProcessor.m; sourceTree = "<group>"; };
+		7732CC5218201847008569C9 /* UINavigationItemProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationItemProcessor.h; sourceTree = "<group>"; };
+		7732CC5318201847008569C9 /* UINavigationItemProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationItemProcessor.m; sourceTree = "<group>"; };
+		7732CC5418201847008569C9 /* UIPageControlProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPageControlProcessor.h; sourceTree = "<group>"; };
+		7732CC5518201847008569C9 /* UIPageControlProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPageControlProcessor.m; sourceTree = "<group>"; };
+		7732CC5618201847008569C9 /* UIPanGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPanGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC5718201847008569C9 /* UIPanGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPanGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC5818201847008569C9 /* UIPickerViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPickerViewProcessor.h; sourceTree = "<group>"; };
+		7732CC5918201847008569C9 /* UIPickerViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPickerViewProcessor.m; sourceTree = "<group>"; };
+		7732CC5A18201847008569C9 /* UIPinchGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPinchGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC5B18201847008569C9 /* UIPinchGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPinchGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC5C18201847008569C9 /* UIProgressViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressViewProcessor.h; sourceTree = "<group>"; };
+		7732CC5D18201847008569C9 /* UIProgressViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewProcessor.m; sourceTree = "<group>"; };
+		7732CC5E18201847008569C9 /* UIRotationGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRotationGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC5F18201847008569C9 /* UIRotationGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRotationGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC6018201847008569C9 /* UIScrollViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollViewProcessor.h; sourceTree = "<group>"; };
+		7732CC6118201847008569C9 /* UIScrollViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewProcessor.m; sourceTree = "<group>"; };
+		7732CC6218201847008569C9 /* UISearchBarProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarProcessor.h; sourceTree = "<group>"; };
+		7732CC6318201847008569C9 /* UISearchBarProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarProcessor.m; sourceTree = "<group>"; };
+		7732CC6418201847008569C9 /* UISegmentedControlProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlProcessor.h; sourceTree = "<group>"; };
+		7732CC6518201847008569C9 /* UISegmentedControlProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlProcessor.m; sourceTree = "<group>"; };
+		7732CC6618201847008569C9 /* UISliderProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISliderProcessor.h; sourceTree = "<group>"; };
+		7732CC6718201847008569C9 /* UISliderProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISliderProcessor.m; sourceTree = "<group>"; };
+		7732CC6818201847008569C9 /* UIStepperProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStepperProcessor.h; sourceTree = "<group>"; };
+		7732CC6918201847008569C9 /* UIStepperProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStepperProcessor.m; sourceTree = "<group>"; };
+		7732CC6A18201847008569C9 /* UISwipeGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwipeGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC6B18201847008569C9 /* UISwipeGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwipeGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC6C18201847008569C9 /* UISwitchProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwitchProcessor.h; sourceTree = "<group>"; };
+		7732CC6D18201847008569C9 /* UISwitchProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchProcessor.m; sourceTree = "<group>"; };
+		7732CC6E18201847008569C9 /* UITabBarItemProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarItemProcessor.h; sourceTree = "<group>"; };
+		7732CC6F18201847008569C9 /* UITabBarItemProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarItemProcessor.m; sourceTree = "<group>"; };
+		7732CC7018201847008569C9 /* UITabBarProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarProcessor.h; sourceTree = "<group>"; };
+		7732CC7118201847008569C9 /* UITabBarProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarProcessor.m; sourceTree = "<group>"; };
+		7732CC7218201847008569C9 /* UITableViewCellProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellProcessor.h; sourceTree = "<group>"; };
+		7732CC7318201847008569C9 /* UITableViewCellProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellProcessor.m; sourceTree = "<group>"; };
+		7732CC7418201847008569C9 /* UITableViewControllerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewControllerProcessor.h; sourceTree = "<group>"; };
+		7732CC7518201847008569C9 /* UITableViewControllerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewControllerProcessor.m; sourceTree = "<group>"; };
+		7732CC7618201847008569C9 /* UITableViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewProcessor.h; sourceTree = "<group>"; };
+		7732CC7718201847008569C9 /* UITableViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewProcessor.m; sourceTree = "<group>"; };
+		7732CC7818201847008569C9 /* UITapGestureRecognizerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapGestureRecognizerProcessor.h; sourceTree = "<group>"; };
+		7732CC7918201847008569C9 /* UITapGestureRecognizerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITapGestureRecognizerProcessor.m; sourceTree = "<group>"; };
+		7732CC7A18201847008569C9 /* UITextFieldProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldProcessor.h; sourceTree = "<group>"; };
+		7732CC7B18201847008569C9 /* UITextFieldProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldProcessor.m; sourceTree = "<group>"; };
+		7732CC7C18201847008569C9 /* UITextViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewProcessor.h; sourceTree = "<group>"; };
+		7732CC7D18201847008569C9 /* UITextViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewProcessor.m; sourceTree = "<group>"; };
+		7732CC7E18201847008569C9 /* UIToolbarProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToolbarProcessor.h; sourceTree = "<group>"; };
+		7732CC7F18201847008569C9 /* UIToolbarProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToolbarProcessor.m; sourceTree = "<group>"; };
+		7732CC8018201847008569C9 /* UIViewControllerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerProcessor.h; sourceTree = "<group>"; };
+		7732CC8118201847008569C9 /* UIViewControllerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerProcessor.m; sourceTree = "<group>"; };
+		7732CC8218201847008569C9 /* UIViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewProcessor.h; sourceTree = "<group>"; };
+		7732CC8318201847008569C9 /* UIViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewProcessor.m; sourceTree = "<group>"; };
+		7732CC8418201847008569C9 /* UIWebViewProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewProcessor.h; sourceTree = "<group>"; };
+		7732CC8518201847008569C9 /* UIWebViewProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewProcessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +215,7 @@
 		7732CBE1182016BD008569C9 = {
 			isa = PBXGroup;
 			children = (
+				7732CC2718201847008569C9 /* NibProcessor */,
 				7732CBF3182016BD008569C9 /* Xib2objcApp */,
 				7732CBEC182016BD008569C9 /* Frameworks */,
 				7732CBEB182016BD008569C9 /* Products */,
@@ -112,6 +257,10 @@
 				7732CBFF182016BD008569C9 /* AppDelegate.h */,
 				7732CC00182016BD008569C9 /* AppDelegate.m */,
 				7732CC02182016BD008569C9 /* MainMenu.xib */,
+				7732CC2118201826008569C9 /* MainWindow.h */,
+				7732CC2218201826008569C9 /* MainWindow.m */,
+				7732CC2318201826008569C9 /* XibInputView.h */,
+				7732CC2418201826008569C9 /* XibInputView.m */,
 				7732CC05182016BD008569C9 /* Images.xcassets */,
 				7732CBF4182016BD008569C9 /* Supporting Files */,
 			);
@@ -128,6 +277,122 @@
 				7732CBFC182016BD008569C9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7732CC2718201847008569C9 /* NibProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				7732CC2818201847008569C9 /* Categories */,
+				7732CC2F18201847008569C9 /* NibProcessor.h */,
+				7732CC3018201847008569C9 /* NibProcessor.m */,
+				7732CC3118201847008569C9 /* Processors */,
+			);
+			name = NibProcessor;
+			path = ../NibProcessor;
+			sourceTree = "<group>";
+		};
+		7732CC2818201847008569C9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7732CC2918201847008569C9 /* NSDictionary+Nib2ObjcExtensions.h */,
+				7732CC2A18201847008569C9 /* NSDictionary+Nib2ObjcExtensions.m */,
+				7732CC2B18201847008569C9 /* NSNumber+Nib2ObjcExtensions.h */,
+				7732CC2C18201847008569C9 /* NSNumber+Nib2ObjcExtensions.m */,
+				7732CC2D18201847008569C9 /* NSString+Nib2ObjcExtensions.h */,
+				7732CC2E18201847008569C9 /* NSString+Nib2ObjcExtensions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7732CC3118201847008569C9 /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				7732CC3218201847008569C9 /* GLKViewControllerProcessor.h */,
+				7732CC3318201847008569C9 /* GLKViewControllerProcessor.m */,
+				7732CC3418201847008569C9 /* GLKViewProcessor.h */,
+				7732CC3518201847008569C9 /* GLKViewProcessor.m */,
+				7732CC3618201847008569C9 /* MKMapViewProcessor.h */,
+				7732CC3718201847008569C9 /* MKMapViewProcessor.m */,
+				7732CC3818201847008569C9 /* Processor.h */,
+				7732CC3918201847008569C9 /* Processor.m */,
+				7732CC3A18201847008569C9 /* ProxyObjectProcessor.h */,
+				7732CC3B18201847008569C9 /* ProxyObjectProcessor.m */,
+				7732CC3C18201847008569C9 /* UIActivityIndicatorViewProcessor.h */,
+				7732CC3D18201847008569C9 /* UIActivityIndicatorViewProcessor.m */,
+				7732CC3E18201847008569C9 /* UIBarButtonItemProcessor.h */,
+				7732CC3F18201847008569C9 /* UIBarButtonItemProcessor.m */,
+				7732CC4018201847008569C9 /* UIBarItemProcessor.h */,
+				7732CC4118201847008569C9 /* UIBarItemProcessor.m */,
+				7732CC4218201847008569C9 /* UIButtonProcessor.h */,
+				7732CC4318201847008569C9 /* UIButtonProcessor.m */,
+				7732CC4418201847008569C9 /* UIControlProcessor.h */,
+				7732CC4518201847008569C9 /* UIControlProcessor.m */,
+				7732CC4618201847008569C9 /* UIDatePickerProcessor.h */,
+				7732CC4718201847008569C9 /* UIDatePickerProcessor.m */,
+				7732CC4818201847008569C9 /* UIGestureRecognizerProcessor.h */,
+				7732CC4918201847008569C9 /* UIGestureRecognizerProcessor.m */,
+				7732CC4A18201847008569C9 /* UIImageViewProcessor.h */,
+				7732CC4B18201847008569C9 /* UIImageViewProcessor.m */,
+				7732CC4C18201847008569C9 /* UILabelProcessor.h */,
+				7732CC4D18201847008569C9 /* UILabelProcessor.m */,
+				7732CC4E18201847008569C9 /* UILongPressGestureRecognizerProcessor.h */,
+				7732CC4F18201847008569C9 /* UILongPressGestureRecognizerProcessor.m */,
+				7732CC5018201847008569C9 /* UINavigationBarProcessor.h */,
+				7732CC5118201847008569C9 /* UINavigationBarProcessor.m */,
+				7732CC5218201847008569C9 /* UINavigationItemProcessor.h */,
+				7732CC5318201847008569C9 /* UINavigationItemProcessor.m */,
+				7732CC5418201847008569C9 /* UIPageControlProcessor.h */,
+				7732CC5518201847008569C9 /* UIPageControlProcessor.m */,
+				7732CC5618201847008569C9 /* UIPanGestureRecognizerProcessor.h */,
+				7732CC5718201847008569C9 /* UIPanGestureRecognizerProcessor.m */,
+				7732CC5818201847008569C9 /* UIPickerViewProcessor.h */,
+				7732CC5918201847008569C9 /* UIPickerViewProcessor.m */,
+				7732CC5A18201847008569C9 /* UIPinchGestureRecognizerProcessor.h */,
+				7732CC5B18201847008569C9 /* UIPinchGestureRecognizerProcessor.m */,
+				7732CC5C18201847008569C9 /* UIProgressViewProcessor.h */,
+				7732CC5D18201847008569C9 /* UIProgressViewProcessor.m */,
+				7732CC5E18201847008569C9 /* UIRotationGestureRecognizerProcessor.h */,
+				7732CC5F18201847008569C9 /* UIRotationGestureRecognizerProcessor.m */,
+				7732CC6018201847008569C9 /* UIScrollViewProcessor.h */,
+				7732CC6118201847008569C9 /* UIScrollViewProcessor.m */,
+				7732CC6218201847008569C9 /* UISearchBarProcessor.h */,
+				7732CC6318201847008569C9 /* UISearchBarProcessor.m */,
+				7732CC6418201847008569C9 /* UISegmentedControlProcessor.h */,
+				7732CC6518201847008569C9 /* UISegmentedControlProcessor.m */,
+				7732CC6618201847008569C9 /* UISliderProcessor.h */,
+				7732CC6718201847008569C9 /* UISliderProcessor.m */,
+				7732CC6818201847008569C9 /* UIStepperProcessor.h */,
+				7732CC6918201847008569C9 /* UIStepperProcessor.m */,
+				7732CC6A18201847008569C9 /* UISwipeGestureRecognizerProcessor.h */,
+				7732CC6B18201847008569C9 /* UISwipeGestureRecognizerProcessor.m */,
+				7732CC6C18201847008569C9 /* UISwitchProcessor.h */,
+				7732CC6D18201847008569C9 /* UISwitchProcessor.m */,
+				7732CC6E18201847008569C9 /* UITabBarItemProcessor.h */,
+				7732CC6F18201847008569C9 /* UITabBarItemProcessor.m */,
+				7732CC7018201847008569C9 /* UITabBarProcessor.h */,
+				7732CC7118201847008569C9 /* UITabBarProcessor.m */,
+				7732CC7218201847008569C9 /* UITableViewCellProcessor.h */,
+				7732CC7318201847008569C9 /* UITableViewCellProcessor.m */,
+				7732CC7418201847008569C9 /* UITableViewControllerProcessor.h */,
+				7732CC7518201847008569C9 /* UITableViewControllerProcessor.m */,
+				7732CC7618201847008569C9 /* UITableViewProcessor.h */,
+				7732CC7718201847008569C9 /* UITableViewProcessor.m */,
+				7732CC7818201847008569C9 /* UITapGestureRecognizerProcessor.h */,
+				7732CC7918201847008569C9 /* UITapGestureRecognizerProcessor.m */,
+				7732CC7A18201847008569C9 /* UITextFieldProcessor.h */,
+				7732CC7B18201847008569C9 /* UITextFieldProcessor.m */,
+				7732CC7C18201847008569C9 /* UITextViewProcessor.h */,
+				7732CC7D18201847008569C9 /* UITextViewProcessor.m */,
+				7732CC7E18201847008569C9 /* UIToolbarProcessor.h */,
+				7732CC7F18201847008569C9 /* UIToolbarProcessor.m */,
+				7732CC8018201847008569C9 /* UIViewControllerProcessor.h */,
+				7732CC8118201847008569C9 /* UIViewControllerProcessor.m */,
+				7732CC8218201847008569C9 /* UIViewProcessor.h */,
+				7732CC8318201847008569C9 /* UIViewProcessor.m */,
+				7732CC8418201847008569C9 /* UIWebViewProcessor.h */,
+				7732CC8518201847008569C9 /* UIWebViewProcessor.m */,
+			);
+			path = Processors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +492,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7732CCB018201847008569C9 /* UIToolbarProcessor.m in Sources */,
+				7732CC9218201847008569C9 /* UIButtonProcessor.m in Sources */,
+				7732CC8E18201847008569C9 /* ProxyObjectProcessor.m in Sources */,
+				7732CCB118201847008569C9 /* UIViewControllerProcessor.m in Sources */,
+				7732CC9F18201847008569C9 /* UIProgressViewProcessor.m in Sources */,
+				7732CCA818201847008569C9 /* UITabBarItemProcessor.m in Sources */,
+				7732CC9A18201847008569C9 /* UINavigationItemProcessor.m in Sources */,
+				7732CC9418201847008569C9 /* UIDatePickerProcessor.m in Sources */,
+				7732CCB218201847008569C9 /* UIViewProcessor.m in Sources */,
+				7732CC9818201847008569C9 /* UILongPressGestureRecognizerProcessor.m in Sources */,
+				7732CC9118201847008569C9 /* UIBarItemProcessor.m in Sources */,
+				7732CC8A18201847008569C9 /* GLKViewControllerProcessor.m in Sources */,
+				7732CC9C18201847008569C9 /* UIPanGestureRecognizerProcessor.m in Sources */,
+				7732CC8718201847008569C9 /* NSNumber+Nib2ObjcExtensions.m in Sources */,
+				7732CC9518201847008569C9 /* UIGestureRecognizerProcessor.m in Sources */,
+				7732CC9E18201847008569C9 /* UIPinchGestureRecognizerProcessor.m in Sources */,
+				7732CCA418201847008569C9 /* UISliderProcessor.m in Sources */,
+				7732CCAF18201847008569C9 /* UITextViewProcessor.m in Sources */,
+				7732CCAE18201847008569C9 /* UITextFieldProcessor.m in Sources */,
+				7732CCAA18201847008569C9 /* UITableViewCellProcessor.m in Sources */,
+				7732CC9918201847008569C9 /* UINavigationBarProcessor.m in Sources */,
+				7732CC9618201847008569C9 /* UIImageViewProcessor.m in Sources */,
+				7732CCA918201847008569C9 /* UITabBarProcessor.m in Sources */,
+				7732CC8618201847008569C9 /* NSDictionary+Nib2ObjcExtensions.m in Sources */,
+				7732CC8918201847008569C9 /* NibProcessor.m in Sources */,
+				7732CC8C18201847008569C9 /* MKMapViewProcessor.m in Sources */,
+				7732CC9318201847008569C9 /* UIControlProcessor.m in Sources */,
+				7732CCA018201847008569C9 /* UIRotationGestureRecognizerProcessor.m in Sources */,
+				7732CCA318201847008569C9 /* UISegmentedControlProcessor.m in Sources */,
+				7732CCAB18201847008569C9 /* UITableViewControllerProcessor.m in Sources */,
+				7732CC8F18201847008569C9 /* UIActivityIndicatorViewProcessor.m in Sources */,
+				7732CCAD18201847008569C9 /* UITapGestureRecognizerProcessor.m in Sources */,
+				7732CCB318201847008569C9 /* UIWebViewProcessor.m in Sources */,
+				7732CC9018201847008569C9 /* UIBarButtonItemProcessor.m in Sources */,
 				7732CC01182016BD008569C9 /* AppDelegate.m in Sources */,
+				7732CCA518201847008569C9 /* UIStepperProcessor.m in Sources */,
+				7732CC9718201847008569C9 /* UILabelProcessor.m in Sources */,
+				7732CCA218201847008569C9 /* UISearchBarProcessor.m in Sources */,
 				7732CBFA182016BD008569C9 /* main.m in Sources */,
+				7732CC8B18201847008569C9 /* GLKViewProcessor.m in Sources */,
+				7732CC8818201847008569C9 /* NSString+Nib2ObjcExtensions.m in Sources */,
+				7732CCAC18201847008569C9 /* UITableViewProcessor.m in Sources */,
+				7732CCA118201847008569C9 /* UIScrollViewProcessor.m in Sources */,
+				7732CCA618201847008569C9 /* UISwipeGestureRecognizerProcessor.m in Sources */,
+				7732CCA718201847008569C9 /* UISwitchProcessor.m in Sources */,
+				7732CC2518201826008569C9 /* MainWindow.m in Sources */,
+				7732CC9B18201847008569C9 /* UIPageControlProcessor.m in Sources */,
+				7732CC9D18201847008569C9 /* UIPickerViewProcessor.m in Sources */,
+				7732CC8D18201847008569C9 /* Processor.m in Sources */,
+				7732CC2618201826008569C9 /* XibInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
