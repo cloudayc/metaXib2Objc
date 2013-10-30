@@ -41,7 +41,6 @@
 - (void)draggingExited:(id <NSDraggingInfo>)sender
 {
     self.layer.borderColor = [NSColor grayColor].CGColor;
-//    NSLog(@"%s", __func__);
 }
 
 - (BOOL)prepareForDragOperation:(id )sender
@@ -51,10 +50,10 @@
 
 - (BOOL)performDragOperation:(id <NSDraggingInfo>)sender
 {
-    MainWindow *mainWindow = ((AppDelegate *)[NSApplication sharedApplication].delegate).window;
+    MainWindow *mainWindow = (MainWindow *)((AppDelegate *)[NSApplication sharedApplication].delegate).window;
     if (!mainWindow.parseCompletely)
     {
-//        [NSAlert alertWithMessageText:@"parsing" defaultButton:@"comfirm" alternateButton:nil otherButton:nil informativeTextWithFormat:nil];
+        NSLog(@"*** error : processing now.");
         return NO;
     }
     NSPasteboard *zPasteboard = [sender draggingPasteboard];
@@ -70,7 +69,6 @@
         NSString *zPath = [zFileNamesAry objectAtIndex:0];
         self.filePath = zPath;
         
-        NSLog(@"%s", __func__);
         [mainWindow parseXibToObjc:_filePath];
         self.layer.borderColor = [NSColor grayColor].CGColor;
         return YES;

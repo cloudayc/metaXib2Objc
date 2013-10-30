@@ -25,6 +25,8 @@
 {
     if ([item isEqualToString:@"on"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else

@@ -51,10 +51,14 @@
     }
     else if ([item isEqualToString:@"clearsOnBeginEditing"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"adjustsFontSizeToFitWidth"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"minimumFontSize"])
@@ -63,6 +67,8 @@
     }
     else if ([item isEqualToString:@"textInputTraits.enablesReturnKeyAutomatically"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:@"enablesReturnKeyAutomatically"];
     }
     else if ([item isEqualToString:@"textInputTraits.secureTextEntry"])

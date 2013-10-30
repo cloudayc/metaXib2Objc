@@ -121,6 +121,8 @@
     }
     else if ([item isEqualToString:@"autoresizingMask"])
     {
+        // TODO:just ignore this item for the time being
+        return;
         enum
         {
             UIViewAutoresizingNone                 = 0,
