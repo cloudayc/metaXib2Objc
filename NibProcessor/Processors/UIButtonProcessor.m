@@ -122,6 +122,8 @@
     // Creation of methods for the title shadow colors, instead of properties
     else if ([item isEqualToString:@"normalTitleShadowColor"])
     {
+        // TODO:just ignore this property for the moment
+        return;
         NSString *stringOutput = [NSString stringWithFormat:@"setTitleShadowColor:%@ forState:UIControlStateNormal", [value colorString]];
         [output setObject:stringOutput forKey:[NSString stringWithFormat:@"__method__%@", item]];
     }

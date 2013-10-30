@@ -13,8 +13,8 @@
 @interface NibProcessor ()
 
 - (void)getDictionaryFromNIB;
-- (void)parseChildren:(NSDictionary *)dict ofCurrentView:(int)currentView withObjects:(NSDictionary *)objects;
-- (NSString *)instanceNameForObject:(id)obj;
+- (void)parseChildren:(NSDictionary *)dict ofCurrentView:(NSString *)currentView withObjects:(NSDictionary *)objects;
+- (NSString *)classAsInstanceNameForObject:(id)obj;
 
 @end
 
@@ -163,8 +163,18 @@
         // Then, output the constructor
         id klass = [object objectForKey:@"class"];
         id constructor = [object objectForKey:@"constructor"];
-        NSString *instanceName = [self instanceNameForObject:object];
-        [_output appendFormat:@"%@ *%@%@ = %@;\n", klass, instanceName, identifierKey, constructor];
+        NSString *instanceName = nil;
+        if ([self customInstanceNameForObject:object])
+        {
+            instanceName = [self customInstanceNameForObject:object];
+            [_output appendFormat:@"%@ *%@ = %@;\n", klass, instanceName, constructor];
+        }
+        else
+        {
+            instanceName = [self classAsInstanceNameForObject:object];
+            instanceName = [NSString stringWithFormat:@"%@%@", instanceName, identifierKey];
+            [_output appendFormat:@"%@ *%@ = %@;\n", klass, instanceName, constructor];
+        }
                 
         // Then, output the properties only, ordered alphabetically
         orderedKeys = [[object allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
@@ -172,17 +182,19 @@
         {
             id value = [object objectForKey:key];
             if (![key hasPrefix:@"__method__"] 
-                && ![key isEqualToString:@"constructor"] && ![key isEqualToString:@"class"]
+                && ![key isEqualToString:@"constructor"]
+                && ![key isEqualToString:@"class"]
+                && ![key isEqualToString:@"instanceName"]
                 && ![key hasPrefix:@"__helper__"])
             {
                 switch (self.codeStyle) 
                 {
                     case NibProcessorCodeStyleProperties:
-                        [_output appendFormat:@"%@%@.%@ = %@;\n", instanceName, identifierKey, key, value];
+                        [_output appendFormat:@"%@.%@ = %@;\n", instanceName, key, value];
                         break;
                         
                     case NibProcessorCodeStyleSetter:
-                        [_output appendFormat:@"[%@%@ set%@:%@];\n", instanceName, identifierKey, [key capitalize], value];
+                        [_output appendFormat:@"[%@ set%@:%@];\n", instanceName, [key capitalize], value];
                         break;
                         
                     default:
@@ -198,7 +210,7 @@
             id value = [object objectForKey:key];
             if ([key hasPrefix:@"__method__"])
             {
-                [_output appendFormat:@"[%@%@ %@];\n", instanceName, identifierKey, value];
+                [_output appendFormat:@"[%@ %@];\n", instanceName, value];
             }
         }
         [_output appendString:@"\n"];    
@@ -208,7 +220,7 @@
     NSArray *nibHierarchy = [_dictionary objectForKey:@"com.apple.ibtool.document.hierarchy"];
     for (NSDictionary *item in nibHierarchy)
     {
-        int currentView = [[item objectForKey:@"object-id"] intValue];
+        NSString *currentView = [item objectForKey:@"object-id"];
         [self parseChildren:item ofCurrentView:currentView withObjects:objects];
     }
     
@@ -216,32 +228,55 @@
     objects = nil;
 }
 
-- (void)parseChildren:(NSDictionary *)dict ofCurrentView:(int)currentView withObjects:(NSDictionary *)objects
+- (void)parseChildren:(NSDictionary *)dict ofCurrentView:(NSString *)currentView withObjects:(NSDictionary *)objects
 {
     NSArray *children = [dict objectForKey:@"children"];
     if (children != nil)
     {
         for (NSDictionary *subitem in children)
         {
-            int subview = [[subitem objectForKey:@"object-id"] intValue];
+            NSString *subview = [subitem objectForKey:@"object-id"];
 
-            id currentViewObject = [objects objectForKey:[NSString stringWithFormat:@"%d", currentView]];
-            NSString *instanceName = [self instanceNameForObject:currentViewObject];
+            id currentViewObject = [objects objectForKey:currentView];
+            NSString *instanceName = nil;
+            if ([self customInstanceNameForObject:currentViewObject])
+            {
+                instanceName = [self customInstanceNameForObject:currentViewObject];
+            }
+            else
+            {
+                instanceName = [self classAsInstanceNameForObject:currentViewObject];
+                instanceName = [NSString stringWithFormat:@"%@%@", instanceName, currentView];
+            }
             
-            id subViewObject = [objects objectForKey:[NSString stringWithFormat:@"%d", subview]];
-            NSString *subInstanceName = [self instanceNameForObject:subViewObject];
+            id subViewObject = [objects objectForKey:subview];
+            NSString *subInstanceName = nil;
+            if ([self customInstanceNameForObject:subViewObject])
+            {
+                subInstanceName = [self customInstanceNameForObject:subViewObject];
+            }
+            else
+            {
+                subInstanceName = [self classAsInstanceNameForObject:subViewObject];
+                subInstanceName = [NSString stringWithFormat:@"%@%@", subInstanceName, subview];
+            }
             
             [self parseChildren:subitem ofCurrentView:subview withObjects:objects];
-            [_output appendFormat:@"[%@%d addSubview:%@%d];\n", instanceName, currentView, subInstanceName, subview];
+            [_output appendFormat:@"[%@ addSubview:%@];\n", instanceName, subInstanceName];
         }
     }
 }
 
-- (NSString *)instanceNameForObject:(id)obj
+- (NSString *)classAsInstanceNameForObject:(id)obj
 {
     id klass = [obj objectForKey:@"class"];
     NSString *instanceName = [[klass lowercaseString] substringFromIndex:2];
     return instanceName;
+}
+
+- (NSString *)customInstanceNameForObject:(id)obj
+{
+    return [obj objectForKey:@"instanceName"];
 }
 
 @end

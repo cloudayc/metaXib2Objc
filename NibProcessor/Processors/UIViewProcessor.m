@@ -47,6 +47,13 @@
     {
         object = [self getProcessedClassName];
     }
+    else if ([item isEqualToString:@"ibExternalExplicitLabel"])
+    {
+        if (value == nil)
+            return;
+        object = value;
+        item = @"instanceName";
+    }
     else if ([item isEqualToString:@"autoresizesSubviews"])
     {
         if ([value isDefaultValue:YES])

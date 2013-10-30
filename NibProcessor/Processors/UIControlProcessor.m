@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, UIControlContentHorizontalAlignment) {
 {
     if ([item isEqualToString:@"contentHorizontalAlignment"])
     {
-        if ([value intValue] == UIControlContentHorizontalAlignmentCenter)
+        if ([value intValue] == UIControlContentHorizontalAlignmentLeft)
             return;
         [output setObject:[value contentHorizontalAlignmentString] forKey:item];
     }
