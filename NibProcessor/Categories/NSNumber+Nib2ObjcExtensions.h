@@ -52,4 +52,6 @@
 - (NSString *)drawableMultisampleString;
 - (NSString *)drawableStencilFormatString;
 
+-(BOOL)isDefaultValue:(BOOL)defaultValue;
+
 @end

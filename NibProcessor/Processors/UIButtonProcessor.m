@@ -33,10 +33,14 @@
 {
     if ([item isEqualToString:@"adjustsImageWhenDisabled"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"adjustsImageWhenHighlighted"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"font"])
@@ -45,24 +49,35 @@
     }
     else if ([item isEqualToString:@"lineBreakMode"])
     {
+        if ([value intValue] == 5) // UILineBreakModeMiddleTruncation
+            return;
         [output setObject:[value lineBreakModeString] forKey:@"titleLabel.lineBreakMode"];
     }
     else if ([item isEqualToString:@"reversesTitleShadowWhenHighlighted"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"showsTouchWhenHighlighted"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"titleShadowOffset"])
     {
+        NSSize size = NSSizeFromString(value);
+        if (size.width < 0.01f && size.height < 0.01f)
+            return;
         [output setObject:[value sizeString] forKey:@"titleLabel.shadowOffset"];
     }
 
     // Creation of methods for the titles, instead of properties
     else if ([item isEqualToString:@"normalTitle"])
     {
+        if ([value length] == 0)
+            return;
         NSString *stringOutput = [NSString stringWithFormat:@"setTitle:%@ forState:UIControlStateNormal", [value quotedAsCodeString]];
         [output setObject:stringOutput forKey:[NSString stringWithFormat:@"__method__%@", item]];
     }

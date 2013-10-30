@@ -49,44 +49,64 @@
     }
     else if ([item isEqualToString:@"autoresizesSubviews"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         object = [value booleanString];
     }
     else if ([item isEqualToString:@"contentStretch"])
     {
+        if ([value isEqualToString:@"{{0, 0}, {1, 1}}"])
+            return;
         object = [NSString stringWithFormat:@"CGRectFromString(@\"%@\")", value];
     }
     else if ([item isEqualToString:@"alpha"])
     {
+        if (fabs([value floatValue] - 1.f) < 0.01f)
+            return;
         object = [value floatString];
     }
     else if ([item isEqualToString:@"hidden"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         object = [value booleanString];
     }
     else if ([item isEqualToString:@"opaqueForDevice"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         object = [value booleanString];
         item = @"opaque";
     }
     else if ([item isEqualToString:@"clipsSubviews"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         object = [value booleanString];
         item = @"clipsToBounds";
     }
     else if ([item isEqualToString:@"clearsContextBeforeDrawing"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         object = [value booleanString];
     }
     else if ([item isEqualToString:@"userInteractionEnabled"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         object = [value booleanString];
     }
     else if ([item isEqualToString:@"multipleTouchEnabled"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         object = [value booleanString];
     }
     else if ([item isEqualToString:@"tag"])
     {
+        if ([value intValue] == 0)
+            return;
         object = [value intString];
     }
     else if ([item isEqualToString:@"backgroundColor"])
@@ -95,10 +115,22 @@
     }
     else if ([item isEqualToString:@"contentMode"])
     {
+        if ([value intValue] == 0)
+            return;
         object = [value contentModeString];
     }
     else if ([item isEqualToString:@"autoresizingMask"])
     {
+        enum
+        {
+            UIViewAutoresizingNone                 = 0,
+            UIViewAutoresizingFlexibleRightMargin  = 1 << 2,
+            UIViewAutoresizingFlexibleBottomMargin = 1 << 5
+        };
+        if ([value intValue] ==
+            (UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin))
+            return;
+        
         object = [value autoresizingMaskString];
     }
     if (object != nil)

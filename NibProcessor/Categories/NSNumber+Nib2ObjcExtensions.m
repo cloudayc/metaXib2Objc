@@ -9,6 +9,10 @@
 #import "NSNumber+Nib2ObjcExtensions.h"
 
 @implementation NSNumber (Nib2ObjcExtensions)
+-(BOOL)isDefaultValue:(BOOL)defaultValue
+{
+    return [self boolValue] == defaultValue;
+}
 
 - (NSString *)booleanString
 {

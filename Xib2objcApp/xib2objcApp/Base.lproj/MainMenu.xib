@@ -657,11 +657,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-JC-Fd5" customClass="XibInputView">
-                        <rect key="frame" x="20" y="20" width="163" height="315"/>
+                        <rect key="frame" x="20" y="194" width="163" height="141"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qq7-aM-s9d">
-                                <rect key="frame" x="37" y="173" width="89" height="17"/>
+                                <rect key="frame" x="37" y="64" width="89" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="drag xib here" id="Fi3-3N-M4d">
                                     <font key="font" metaFont="system"/>
@@ -683,10 +683,10 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="534" height="313"/>
-                                    <size key="maxSize" width="534" height="10000000"/>
+                                    <size key="maxSize" width="551" height="10000000"/>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="534" height="313"/>
-                                    <size key="maxSize" width="534" height="10000000"/>
+                                    <size key="maxSize" width="551" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -18,15 +18,14 @@
 
 - (BOOL)parseXibToObjc:(NSString *)filePath
 {
+    NSAssert(filePath != nil, @"*** file path couldn't be nil!! ***");
+    
     if (!([filePath hasSuffix:@".xib"] || [filePath hasSuffix:@".nib"]))
     {
         return NO;
     }
     NSLog(@"start..");
     _parseCompletely = NO;
-//    [_outputTextView setString:@"parsing..."];
-    
-    NSAssert(filePath != nil, @"*** file path couldn't be nil!! ***");
     
     NibProcessor *processor = [[NibProcessor alloc] init];
     processor.codeStyle = NibProcessorCodeStyleProperties;
