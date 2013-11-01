@@ -263,7 +263,8 @@
     NSArray *values = [NSArray arrayWithObjects:@"UITableViewCellSeparatorStyleNone", 
                        @"UITableViewCellSeparatorStyleSingleLine", 
                        @"UITableViewCellSeparatorStyleSingleLineEtched", nil];
-    return [values objectAtIndex:[self intValue]];
+    // fix bug of index = -1
+    return [values objectAtIndex:[self intValue] < 0 ? 0 : [self intValue]];
 }
 
 - (NSString *)tableViewCellAccessoryString

@@ -66,12 +66,12 @@
 
 - (NSDictionary *)inputAsDictionary
 {
-    NSString *errorStr = nil;
+    NSError *errorStr = nil;
     NSPropertyListFormat format;
-    NSDictionary *propertyList = [NSPropertyListSerialization propertyListFromData:_data
-                                                                  mutabilityOption:NSPropertyListImmutable
+    NSDictionary *propertyList = [NSPropertyListSerialization propertyListWithData:_data
+                                                                           options:NSPropertyListImmutable
                                                                             format:&format
-                                                                  errorDescription:&errorStr];
+                                                                             error:&errorStr];
     [errorStr release];
     return propertyList;    
 }
@@ -122,7 +122,8 @@
         NSString *klass = [object objectForKey:@"class"];
 
         Processor *processor = [Processor processorForClass:klass];
-
+        processor.scaleFactors = _frameScaleFactors;
+        
         if (processor == nil)
         {
 #ifdef CONFIGURATION_Debug

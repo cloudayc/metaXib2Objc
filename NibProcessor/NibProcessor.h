@@ -27,6 +27,9 @@ typedef enum {
 @property (nonatomic, readonly) NSString *output;
 @property (nonatomic) NibProcessorCodeStyle codeStyle;
 
+// extended function
+@property (nonatomic, retain) NSArray *frameScaleFactors;
+
 - (void)process;
 
 - (NSString *)inputAsText;

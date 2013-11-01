@@ -12,8 +12,21 @@
 
 + (NSString *)rectStringFromPoint:(NSString *)pointString size:(NSString *)sizeString
 {
+    return [NSString rectStringFromPoint:pointString size:sizeString scaleFactors:nil];
+}
+
++ (NSString *)rectStringFromPoint:(NSString *)pointString size:(NSString *)sizeString scaleFactors:(NSArray *)scaleFactors
+{
     NSPoint point = NSPointFromString(pointString);
     NSSize size = NSSizeFromString(sizeString);
+    if ([scaleFactors count] > 0
+        && [scaleFactors[0] length] > 0
+        && [scaleFactors[1] length] > 0
+        && [scaleFactors[2] length] > 0
+        && [scaleFactors[3] length] > 0)
+    {
+        return [NSString stringWithFormat:@"CGRectMake(%1.1ff * %@, %1.1ff * %@, %1.1ff * %@, %1.1ff * %@)", point.x, scaleFactors[0], point.y, scaleFactors[1], size.width, scaleFactors[2], size.height, scaleFactors[3]];
+    }
     return [NSString stringWithFormat:@"CGRectMake(%1.1f, %1.1f, %1.1f, %1.1f)", point.x, point.y, size.width, size.height];
 }
 

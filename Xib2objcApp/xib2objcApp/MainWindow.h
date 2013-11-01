@@ -11,6 +11,12 @@
 @interface MainWindow : NSWindow
 {
     IBOutlet NSTextField *_tipLabel;
+    
+    
+    IBOutlet NSTextField *_xScaleFactor;
+    IBOutlet NSTextField *_yScaleFactor;
+    IBOutlet NSTextField *_wScaleFactor;
+    IBOutlet NSTextField *_hScaleFactor;
 }
 
 @property (atomic) IBOutlet NSTextView *outputTextView;

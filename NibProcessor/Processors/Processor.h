@@ -19,6 +19,9 @@
 
 @property (nonatomic, readonly) NSDictionary *input;
 
+// extended function
+@property (nonatomic, retain) NSArray *scaleFactors;
+
 + (Processor *)processorForClass:(NSString *)klass;
 
 - (NSDictionary *)processObject:(NSDictionary *)object;

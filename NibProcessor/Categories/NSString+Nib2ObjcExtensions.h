@@ -11,6 +11,7 @@
 @interface NSString (Nib2ObjcExtensions)
 
 + (NSString *)rectStringFromPoint:(NSString *)pointString size:(NSString *)sizeString;
++ (NSString *)rectStringFromPoint:(NSString *)pointString size:(NSString *)sizeString scaleFactors:(NSArray *)scaleFactors;
 + (NSString *)dateFromStringFunction;
 - (NSString *)sizeString;
 - (NSString *)colorString;

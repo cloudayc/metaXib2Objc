@@ -32,38 +32,56 @@
 {
     if ([item isEqualToString:@"rowHeight"])
     {
+        if ([value intValue] == 44)
+            return;
         [output setObject:[value description] forKey:item];
     }
     else if ([item isEqualToString:@"sectionFooterHeight"])
     {
+        if ([value intValue] == 22)
+            return;
         [output setObject:[value description] forKey:item];
     }
     else if ([item isEqualToString:@"sectionHeaderHeight"])
     {
+        if ([value intValue] == 22)
+            return;
         [output setObject:[value description] forKey:item];
     }
     else if ([item isEqualToString:@"separatorStyle"])
     {
+        if ([value intValue] <= 0)
+            return;
         [output setObject:[value tableViewCellSeparatorStyleString] forKey:item];
     }
     else if ([item isEqualToString:@"sectionIndexMinimumDisplayRowCount"])
     {
+        if ([value intValue] == 0)
+            return;
         [output setObject:[value intString] forKey:item];
     }
     else if ([item isEqualToString:@"allowsMultipleSelection"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"allowsMultipleSelectionDuringEditing"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"allowsSelection"])
     {
+        if ([value isDefaultValue:YES])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else if ([item isEqualToString:@"allowsSelectionDuringEditing"])
     {
+        if ([value isDefaultValue:NO])
+            return;
         [output setObject:[value booleanString] forKey:item];
     }
     else

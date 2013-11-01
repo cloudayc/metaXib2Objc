@@ -191,7 +191,11 @@
     NSString *frameString = [self frameString];
     if (nil != frameString)
     {
-        [output setObject:frameString forKey:@"frame"];
+        // if the constructor has frame, ignore this item;
+        if ([[self constructorString] rangeOfString:@"initWithFrame"].length == 0)
+        {
+            [output setObject:frameString forKey:@"frame"];
+        }
     }
 
     return output;

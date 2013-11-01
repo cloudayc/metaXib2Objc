@@ -27,7 +27,7 @@
 
 - (NSString *)frameString
 {
-    NSString *rect = [NSString rectStringFromPoint:[self.input objectForKey:@"frameOrigin"] size:[self.input objectForKey:@"frameSize"]];
+    NSString *rect = [NSString rectStringFromPoint:[self.input objectForKey:@"frameOrigin"] size:[self.input objectForKey:@"frameSize"] scaleFactors:self.scaleFactors];
     return rect;
 }
 
